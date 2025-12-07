@@ -2,9 +2,9 @@
 
 > **Turn Chores into Epic Adventures!**
 
-HomeQuest is a gamified chore management application designed to make household tasks fun and rewarding for the whole family. Built with a "demon slayer" inspired aesthetic, it transforms mundane to-do lists into heroic quests.
+HomeQuest is a gamified chore management application designed to make household tasks fun and rewarding for the whole family. It transforms mundane to-do lists into heroic quests.
 
-![HomeQuest Banner](public/logo.png)
+![HomeQuest Banner](public/logo.svg)
 
 ## ✨ Features
 
