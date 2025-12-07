@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# ⚔️ HomeQuest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Turn Chores into Epic Adventures!**
 
-Currently, two official plugins are available:
+HomeQuest is a gamified chore management application designed to make household tasks fun and rewarding for the whole family. Built with a "demon slayer" inspired aesthetic, it transforms mundane to-do lists into heroic quests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![HomeQuest Banner](public/logo.png) *[Logo Placeholder]*
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🛡️ Hero Profiles**: Choose your avatar (Anime Boy, Anime Girl, Boar Mask, Fox Mask) and track your XP.
+- **📜 Quest Board**: Accept available quests from the sticky-note board. Flip them to see details!
+- **⚔️ Parent Admin Mode**:
+    - Secure PIN protection for quest verification.
+    - "Pending" status for recurring tasks ensures kids don't just spam click.
+- **📱 Tablet Friendly**: Large touch targets and vibrant UI designed for family tablets.
+- **💾 Local First**: Data stays on your device. No cloud setup required.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clone the repo**:
+    ```bash
+    git clone https://github.com/yourusername/HomeQuest.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Start the adventure**:
+    ```bash
+    npm run dev
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎮 How to Play
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Parents**: Launch the app and set up your **Admin PIN**.
+2.  **Create Heroes**: Add profiles for your children.
+3.  **Post Quests**: Add chores (Quests) to the board.
+4.  **Conquer**: Children log in, accept quests, and mark them as done.
+5.  **Verify**: Parents approve the work, and Heroes get their Points!
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*Built with React, Vite, and a sense of adventure.*
